@@ -99,7 +99,7 @@ const Footer = () => {
 
         <div className='border-t border-solid border-gray-300 mt-3'>
           <div className='md:w-3/4 mx-auto md:flex md:justify-between pt-3 w-full text-center md:text-left'>
-            <p>Copyright © 2023. All rights reserved by: <span className='font-bold'> Quang Nhựt | Tiến Đạt | Minh Quí.</span></p>
+            <p>Copyright © 2023. All rights reserved by Nhóm 1: <span className='font-bold'> Quang Nhựt | Tiến Đạt | Minh Quí.</span></p>
             <div className={clsx(styles.iconsBottom, 'mt-5 md:mt-0')}>
               <i><FaInstagram className='inline-block' /></i>
               <i><FaFacebookF className='inline-block' /></i>
