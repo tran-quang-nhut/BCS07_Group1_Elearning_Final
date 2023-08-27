@@ -1,0 +1,212 @@
+@import '../../utils/variable.scss';
+
+.itemsCard{
+    padding: 30px 15px;
+    width: 100%;
+    transition: all .4s;
+    .items{
+        position: relative;
+        border: 1px solid rgba(0,0,0,.125);
+        box-shadow: 0 0 10px 4px rgb(0 0 0 / 10%);
+        cursor: pointer;
+        .itemImg{
+            position: relative;
+
+            span{
+                position: absolute;
+                color: $cWhite;
+                display: inline-block;
+                font-size: $text-300;
+                background: red;
+                height: 30px;
+                width: 100px;
+                line-height: 30px;
+                text-align: center;
+                top: 5px;
+                left: -5px;
+                font-weight: 500;
+                border-radius: 5px 0 0 0 ;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: -12px;
+                    border-color: red transparent;
+                    border-style: solid;
+                    border-width: 15px 12px 15px 0;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    bottom: -10px;
+                    left: 0;
+                    border-bottom: 10px solid transparent;
+                    border-right: 5px solid red;
+                    filter: brightness(.8);
+                }
+            }
+            .divImg{
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+                img{
+                    object-position: center;
+                    object-fit: cover;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            h1{
+                position: absolute;
+                bottom: -10px;
+                left: 0px;
+                background: $c3GradientRight;
+                padding: 5px 10px;
+                font-size: $text-300;
+                font-weight: 500;
+                color: $cWhite;
+            }
+        }
+
+        .avatarAdmin{
+            border-top: 1px solid $cGreen-600;
+            border-bottom: 1px solid $cGreen-600;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            border-color: $cGreen-600 transparent;
+            padding: 2px;
+        }
+
+        .hoverLeftSide, .hoverRightSide{
+            visibility: hidden;
+            position: absolute;
+            top: 50%;
+            transform: scale(0) translateY(-50%);
+            background-color: $cWhite;
+            padding: 20px;
+            width: 320px;
+            z-index: 1;
+            border: 1px solid rgba(0,0,0,.125);
+            box-shadow: 0 0 10px 8px rgb(0 0 0 / 10%);
+            transition: all .3s;
+            transform-origin: center;
+            overflow: hidden;
+            .CourseName{
+                font-size: $text-300;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin: 15px 0;
+            }
+            .text{
+                font-size: $text-300;
+                font-weight: 400;
+                text-align: justify;
+                color: grey;
+            }
+
+            &::after{
+                content: "";
+                position: absolute;
+                top: 50%;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+            }
+        }
+        .hoverLeftSide{
+            left: 104%;
+            &::after{
+                right: 100%;
+                border-right: 10px solid $cWhite;
+            }
+        }
+        .hoverRightSide{
+            right: 104%;
+            &::after{
+                left: 100%;
+                border-left: 10px solid $cWhite;
+            }
+        }
+
+        &:hover .hoverLeftSide, &:hover .hoverRightSide{
+            visibility: visible;
+            transform: scale(1) translateY(-50%);
+        }
+
+        .btnDetail{
+            @apply mt-5 hover:scale-95 block w-full py-3 text-lg font-medium text-white;
+            background: $c5GradientLeft;
+            background-size: 250% auto;
+            transition: all 0.5s ease;
+            transition-timing-function: ease, ease;
+            &:hover{
+                background-position: right center;
+            }
+        }
+
+        
+    }
+
+    &:hover{
+        padding-top: 27px;
+    }
+    @media screen and (max-width: 1440.98px) {
+        
+            .infoItem{
+                display: flex;
+                flex-direction: column;
+                padding: 2px;
+                svg{
+                    font-size: 32px;
+                }
+                span{
+                    font-size: 16px;
+                }
+            }
+            .info{
+                 display: flex;
+                 justify-content: space-around;
+                 gap: 8px;
+            }
+    }
+
+    
+    @media screen and (max-width: 414.98px) {
+        .items{
+            
+            .hoverLeftSide, .hoverRightSide{
+                top: 0;
+                width: 100%;
+                left: 0;
+                transform: translateY(0);
+                &::after{
+                    border: none;
+                }
+            }
+
+            &:hover .hoverLeftSide, &:hover .hoverRightSide{
+                visibility: visible;
+                transform: scale(1) translateY(0);
+            }
+        }
+    }
+    @media screen and (max-width: 320px) {
+        
+                .infoItem{
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 16px;
+                    svg{
+                        font-size: 32px;
+                    }
+                    span{
+                        font-size: 13px;
+                    }
+                
+            }
+        
+    }
+}

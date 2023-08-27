@@ -1,0 +1,295 @@
+.bannerSlide {
+    max-width: 100%;
+    margin: auto;
+    height: 600px;
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    .bannerLeft {
+        height: 580px;
+        position: relative;
+        .flyAngle{
+            border-left: 25px solid transparent ;
+            border-right: 25px solid transparent ;
+            border-bottom: 60px solid rgb(21 128 61) ;
+            border-top: 25px solid transparent ;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            transform: rotate(-40deg);
+        }
+        .BgDot1{
+            position: absolute;
+            top: 23%;
+            left: 10%;
+            height: 70px;
+            background-size: 10px 10px;
+            width: 20%;
+            background-image: radial-gradient(#41b294 10%,transparent 11%),radial-gradient(#41b294 10%,transparent 11%);
+        }
+        .BgDot2{
+            position: absolute;
+            top: 15%;
+            right: 5%;
+            height: 10%;
+            width: 10%;
+            transform: rotate(45deg);
+            background-size: 10px 10px;
+            background-image: radial-gradient(#f6ba35 10%,transparent 11%);
+        }
+        .BgDot3{
+            position: absolute;
+            bottom: 15%;
+            right: 15%;
+            height: 10%;
+            width: 30%;
+            background-size: 10px 10px;
+            background-image: radial-gradient(#f6ba35 10%,transparent 11%);
+        }
+
+        img {
+            width: 150px;
+            display: block;
+            position: absolute;
+            top: 20%;
+            right: 15%;
+        }
+        .carouselText{
+            position: absolute;
+            top: 60%;
+            left: 55%;
+            width: 500px;
+            transform: translate(-50%, -50%);
+            h2{
+                font-size: 45px;
+                font-weight: 700;
+                background: linear-gradient(to right,#3b8d99 0%, #30CFD0 50%, #330867 100%);
+	            -webkit-background-clip: text;
+	            -webkit-text-fill-color: transparent;
+            }
+            .textAnimation{
+                h1 {
+                    font-size: 40px;
+                    width: 265px;
+                    font-weight: 700;
+                    background: linear-gradient(to right, #7462f9, #df3ef8);
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    letter-spacing: 7px;
+                    position: relative;
+                    &::before, &::after{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                    }
+                    &::before{
+                        background: white;
+                        animation: writeText 6s steps(10) 1s forwards infinite;
+                    }
+                    &::after{
+                        top: 20%;
+                        width: 1px;
+                        background-color: rgb(6, 6, 6);
+                        animation:blinkMouse 900ms steps(10) infinite,
+                                writeText 6s steps(10) 1s forwards infinite;
+                    }
+                
+                }
+            }
+            .textAnimation2{
+                h1 {
+                    font-size: 30px;
+                    width: 100%;
+                    font-weight: 700;
+                    background: linear-gradient(to right, #7462f9, #df3ef8);
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    display: inline-block;
+                    position: relative;
+                    &::before, &::after{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                    }
+                    &::before{
+                        background: white;
+                        animation: writeText 9s steps(23) 1s forwards infinite;
+                    }
+                    &::after{
+                        top: 20%;
+                        width: 1px;
+                        background-color: rgb(6, 6, 6);
+                        animation:blinkMouse 900ms steps(23) infinite,
+                                writeText 9s steps(23) 1s forwards infinite;
+                    }
+                
+                }
+            }
+
+        }
+    }
+
+    .bannerRight{
+        position: relative;
+        width: 100%;
+        img{
+            display: block;
+        }
+        img:first-child{
+            display: block;
+            width: 100%;
+        }
+        .imgBanner2, .imgBanner3, .imgBanner4{
+            position: absolute;
+            left: 0;
+            width: 15%;
+            display: block;
+        }
+        .imgBanner2{
+            top: 5%;
+            animation: skyFling 8s linear infinite;
+        }
+        .imgBanner3{
+            top: 15%;
+            width: 10%;
+            animation: skyFling 8s linear infinite;
+        }
+        .imgBanner4{
+            top: 25%;
+            width: 12%;
+            animation: skyFling 8s 3s linear infinite;
+        }
+        .imgBanner5{
+            position: absolute;
+            width: 15%;
+            top: 42%;
+            left: 40%;
+            transform-origin: bottom;
+            animation: Message 4s linear 3s infinite;
+        }
+        .imgComputer1, .imgComputer2, .imgComputer3{
+            width: 15%;
+            position: absolute;
+            top: 12%;
+            right: 10%;   
+        }
+        .imgComputer1{
+            top: 15%;
+            animation: runningMachine 4s linear infinite;
+            transform: rotate(32deg);
+        }
+        .imgComputer2{
+            top: 21%;
+            right: 16%;
+            animation: runningMachinePre 4s linear infinite;
+        }
+        .imgComputer3{
+            opacity: 0.7;
+            transform: rotate(14deg);
+            top: 29%;
+            left: 7%;
+            width: 10%;
+            animation: runningMachine 4s linear infinite;
+        }
+
+    }
+    @media screen and (max-width: 821.98px) {
+        padding-bottom: 10px;
+        height: 360px;
+        overflow: hidden;
+        .bannerLeft{
+            height: 350px;
+            .carouselText{
+                top: 68%;
+                left: 10%;
+                transform: translateY(-50%);
+                h2{
+                    font-size: 5vw;
+                    width: 350px;
+                }
+            }
+            
+        }
+    }
+    @media screen and (max-width: 414.98px) {
+        height: auto;
+        padding: 0 10px;
+        .bannerLeft{
+            height: 350px;
+            overflow: hidden;
+            .carouselText{
+                top: 68%;
+                left: 3%;
+                transform: translateY(-50%);
+                h2{
+                    font-size: 8vw;
+                    width: 320px;
+                }
+            }
+            
+        }
+    }
+}
+
+@keyframes writeText{
+   to{
+    left: 100%;
+   }
+}
+@keyframes blinkMouse {
+    to{
+        background: transparent;
+    }
+}
+
+@keyframes skyFling {
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(350%);
+        opacity: 0;
+    }
+}
+
+@keyframes Message {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes runningMachine{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes runningMachinePre{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

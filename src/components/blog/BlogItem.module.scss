@@ -1,0 +1,11 @@
+@import '../../utils/mixin.scss';
+@import '../../utils/variable.scss';
+.btnSeeMore{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $cWhite;
+    padding: 10px 20px;
+    transition-duration: ease, ease;
+    @include btnGradient($c5GradientLeft, 250% auto, .5s all ease);
+}

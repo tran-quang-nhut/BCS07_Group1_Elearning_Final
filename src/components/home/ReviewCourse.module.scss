@@ -1,0 +1,109 @@
+@import '../../utils/variable.scss';
+
+.reviewItem{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    .reviewImg{
+        position: relative;
+        background: linear-gradient(to right, #7462f9, #df3ef8);
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+        text-align: center;
+        border-radius: 5px 50% 50% 50%;
+        z-index: 10;
+        img{
+            width: 200px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .triangleBox{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        border-bottom: 45px solid $cYellow-600;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        transform: rotate(-45deg);
+    }
+    .dot1Box{
+        position: absolute;
+        top: 12%;
+        left: 7%;
+        height: 70px;
+        background-size: 10px 10px;
+        width: 20%;
+        background-image: radial-gradient(#41b294 10%,transparent 11%),radial-gradient(#41b294 10%,transparent 11%);
+    }
+    .dot2Box{
+        position: absolute;
+        bottom: 0%;
+        right: 10%;
+        height: 100px;
+        background-size: 10px 10px;
+        width: 100px;
+        border-radius: 100%;
+        background-image: radial-gradient(#41b294 10%,transparent 11%),radial-gradient(#41b294 10%,transparent 11%);
+    }
+
+    blockquote{
+
+        q{
+            font-size: $text-300;
+            line-height: 28px;
+            font-weight: 500;
+            text-align: justify;
+            &::before{
+                position: absolute;
+                top: 10%;
+                left: -2%;
+                font-family: fantasy;
+                color: #ed85ab;
+                font-size: 60px;
+                @media screen and (max-width: 821.98px) {
+                    top: -10px;
+                    left: 10px;
+                }
+                @media screen and (max-width: 414.98px) {
+                    top: -10px;
+                    left: 10px;
+                }
+            }
+            
+        }
+    }
+    p{
+        color: grey;
+        font-size: $text-300;
+        font-weight: 500;
+    }
+    .reviewName{
+        color: #ed85ab;
+        margin-top: 20px;
+    }
+    .dot3Box{
+        position: absolute;
+        top: -18%;
+        left: 10%;
+        height: 60px;
+        background-size: 10px 10px;
+        width: 80px;
+        background-image: radial-gradient($cYellow-600 10%,transparent 11%),radial-gradient($cYellow-600 10%,transparent 11%);
+    }
+    .dot4Box{
+        position: absolute;
+        bottom: 0%;
+        right: 10%;
+        height: 70px;
+        background-size: 10px 10px;
+        width: 20%;
+        background-image: radial-gradient($cGreen-600 10%,transparent 11%),radial-gradient($cGreen-600 10%,transparent 11%);
+    }
+}

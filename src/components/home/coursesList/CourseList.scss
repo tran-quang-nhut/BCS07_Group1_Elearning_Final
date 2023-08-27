@@ -1,0 +1,41 @@
+@import '../../../utils/variable.scss';
+
+.ant-tabs-ink-bar {
+    border-bottom: 2px solid $cGreen-600;
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn{
+    color: $cGreen-600 !important;
+}
+
+.customPrev, .customNext{
+    @apply p-1 lg:p-2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $cBlack;
+    color: $cWhite;
+    border: 1px solid $cWhite;
+    z-index: 1;
+    font-size: 20px;
+    opacity: 0.6;
+    text-align: center;
+    border-radius: 100%;
+    display: inline-block;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover{
+        opacity: 1;
+    }
+}
+.customNext {
+    right: 0%;
+}
+.customPrev{
+    left: 0%;
+}
+
+.customPrev:hover::after, .customNext:hover::after{
+    width: 100%;
+}
+

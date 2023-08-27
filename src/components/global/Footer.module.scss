@@ -1,0 +1,94 @@
+@import '../../utils/variable.scss';
+@import '../../utils/mixin.scss';
+
+
+.footer{
+    background-color: #f0f8ff;
+    .social{
+
+        .logoFooter{
+            display: flex;
+            align-items: center;
+
+            img{
+                width: 50px;
+                display: block;
+            }
+            h3{
+              font-weight: 700;
+              font-size: 25px;
+              text-shadow: 2px 2px 2px #726f6fa3;  
+            }
+        }
+        .iconSocial{
+            display: flex;
+            align-items: center;
+            padding-top: 12px;
+            cursor: pointer;
+            transition: all .4s ease-out;
+            &:hover{
+                padding-top: 10px;
+                padding-bottom: 2px;
+                span{
+                    color: $cTeal-600;   
+                }
+            }
+            i{  
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                line-height: 30px;
+                background-color: $cTeal-600;
+                font-size: 14px;
+                border-radius: 100%;
+                color: $cWhite;
+            }
+            span{
+                font-size: 1rem;
+                font-weight: 500;
+                margin-left: 10px;
+                transition: all .5s;
+            }
+        }
+    }
+    .btnFooter{
+        @include btnGradient($c5GradientLeft, 250% auto, all 0.5s ease);
+        transition-timing-function: ease, ease;
+        @apply px-4 py-2 text-white font-semibold text-lg hover:rounded-md;
+    }
+
+    .iconsBottom{
+        display: flex;
+        i{
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            background: $c3GradientRight;
+            font-size: 14px;
+            border-radius: 10px;
+            color: $cWhite;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: all .3s;
+            &:hover {
+                border-radius: 100%;
+                box-shadow: 1px 2px 2px 1px #636363;
+            }
+        }
+    }
+    .linkFooter{
+        font-size: 18px;
+        font-weight: 500;
+        padding-top: 10px;
+        transition: all .3s;
+        cursor: pointer;
+        &:hover{
+            padding-top: 8px;
+            padding-bottom: 2px;
+            color: $cTeal-600;
+        }
+    }
+}

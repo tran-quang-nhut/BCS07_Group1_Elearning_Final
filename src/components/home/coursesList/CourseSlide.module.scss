@@ -1,0 +1,155 @@
+@import '../../../utils/variable.scss';
+
+
+.coursesCard{
+    @apply px-4 lg:py-5;
+    cursor: pointer;
+    .coursesItem{
+        position: relative;
+        overflow: hidden;
+        border: 1px solid rgba(0,0,0,.125);
+        box-shadow: 0 0 10px 4px rgb(0 0 0 / 10%);
+        background-color: $cWhite;
+        .coursesImg{
+            position: relative;
+            
+            .objImg{
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-position: center;
+                    object-fit: cover;
+                }
+            }
+            h1{
+                padding: 5px 10px;
+                font-size:  $text-300;
+                font-weight: 500;
+                color: $cWhite;
+                position: absolute;
+                bottom: -15px;
+                left: 0;
+                background: linear-gradient(to right, #227df9, #7462f9, #df3ef8);
+            }
+        }
+    
+        .avatarTeacher{
+            
+            border-top: 1px solid $cYellow-600;
+            border-bottom: 1px solid $cYellow-600;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            border-color: $cYellow-600 transparent;
+            padding: 2px;
+    
+            img{
+                display: block;
+                width: 40px;
+                border-radius: 50%;
+            }
+        }
+        .hoverLeft{
+            transform: translateX(-150%);
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: $cWhite;
+            padding: 30px 20px;
+            transition: all .4s;
+            .hoverCourseName{
+                font-size: $text-300;
+                font-weight: 500;
+                margin-top: 10px;
+                text-transform: uppercase;
+                background: $cTeal-500;
+                color: $cWhite;
+                position: absolute;
+                top: 25%;
+                padding: 4px 10px;
+                left: -5px;
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: -15px;
+                    border-color: $cTeal-500 transparent;
+                    border-style: solid;
+                    border-width: 17px 16px 16px 0;
+                }
+            }
+            .textHover{
+                @apply text-gray-500 font-medium my-4;
+                margin-top: 5em;
+                font-size: 16px;
+                text-align: justify;
+            }
+        }
+        &:hover .hoverLeft, .hoverRight{
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .btnText{
+            @apply mt-5 hover:scale-95 block w-full py-3 text-lg font-medium text-white;
+            background: linear-gradient(to left, #227df9 0%, #7462f9 25%, #df3ef8 50%, #7462f9 75%, #227df9 100%);
+            background-size: 250% auto;
+            transition: all 0.5s ease;
+            transition-timing-function: ease, ease;
+            &:hover{
+                background-position: right center;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 1440px) {
+        
+    // .contentItem{
+    //     display: flex;
+    //     // flex-direction: column;
+    //     // padding: 2px;
+    //     // svg{
+    //     //     font-size: 32px;
+    //     // }
+    //     // span{
+    //     //     font-size: 16px;
+    //     // }
+    // }
+    .info{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 14px;
+    }
+    .infoItem{
+        display: flex;
+        flex-direction: column;
+         padding: 2px;
+        svg{
+                font-size: 32px;
+            }
+            span{
+                font-size: 16px;
+            }
+    }
+}
+@media screen and (max-width: 320px) {
+    .info{
+        
+        svg{
+                font-size: 32px;
+            }
+            span{
+                font-size: 10px;
+            }
+    }
+}
+

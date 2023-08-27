@@ -1,0 +1,59 @@
+@import '../../../utils/mixin.scss';
+@import '../../../utils/variable.scss';
+
+.contentCourse{
+    margin-bottom: 40px;
+    .btnView{
+        padding: 5px 20px;
+        border: none;
+        position: relative;
+        background-image: linear-gradient(90deg, #2d7af9 30%, #a752f8 80%);
+        transition: all .5s ease;
+        z-index: 1;
+        font-weight: 600;
+        span{
+          transition: all .3s ease;  
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            right: 2px;
+            bottom: 2px;
+            background-color: $cWhite;
+            z-index: -1;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            bottom: 2px;
+            right: 100%;
+            transition: all .5s ease;
+            z-index: 1;
+            background-image: linear-gradient(to left, #df3ef8 0%, #7462f9 50%, #227df9 100%);
+        }
+        &:hover::after{
+            right: 2px;
+        }
+        &:hover span{
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+    }
+
+    .lessonContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        box-shadow: 1px 1px 2px 1px rgb(239 244 190 / 27%);
+        cursor: pointer;
+        @media screen and (max-width: 414.98px) {
+            display: block;
+        }
+    }
+}
