@@ -61,7 +61,7 @@ const Header = () => {
       <div className={styles.header}>
         <div className="container mx-auto flex justify-between items-center ">
           <NavLink to='/' className={styles.Logo} >
-            <img src={require('../../assets/logo/E-learning.png')} alt="logo E-learning" />
+            <img src={require('../../assets/logo/logo-tree.png')} alt="logo E-learning" />
             <h1>Nhom1 E-LEARNING</h1>
           </NavLink>
 

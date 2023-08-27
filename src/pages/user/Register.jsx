@@ -80,7 +80,7 @@ const Register = () => {
           onSubmit={formik.handleSubmit}
           className="lg:w-1/3 md:w-1/2 w-full flex-col border bg-white  rounded-[4px] mt-10">
           <div className="mb-3 flex justify-center items-center bg-gray-200 py-2">
-            <img className="w-12 block" src={require('../../assets/logo/E-learning.png')} alt='...' />
+            <img className="w-12 block" src={require('../../assets/logo/logo-tree.png')} alt='...' />
             <h1 className='font-bold text-2xl ml-3'>Đăng Ký</h1>
           </div>
           <div className='px-6 pb-5 shadow-md mt-5'>

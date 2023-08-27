@@ -84,7 +84,7 @@ const Dashboard = (props) => {
       >
         <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
           <div className='py-5 px-5'>
-            <NavLink to='/'><img className='w-40' src={require('../../assets/logo/E-learning.png')} alt="" /></NavLink>
+            <NavLink to='/'><img className='w-40' src={require('../../assets/logo/logo-tree.png')} alt="" /></NavLink>
           </div>
           <Menu theme="dark" defaultSelectedKeys={['2']} mode="inline" items={items} />
         </Sider>

@@ -39,7 +39,7 @@ const Footer = () => {
         <Row>
           <Col span={24} md={12} lg={8} className={styles.social}>
             <div className={styles.logoFooter}>
-              <img src={require('../../assets/logo/E-learning.png')} alt="logo footer" />
+              <img src={require('../../assets/logo/logo-tree.png')} alt="logo footer" />
               <h3>E-Learning</h3>
             </div>
 
