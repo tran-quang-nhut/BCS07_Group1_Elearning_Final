@@ -44,7 +44,7 @@ const CategoryCoursesItem = () => {
                 {
                     dataMap.map((ele, index) => {
                         return (
-                            <Col xs={24} md={12} lg={6} key={index} className={styles.itemsCard}>
+                            <Col xs={24} sm={12} lg={8} xl={6} key={index} className={styles.itemsCard}>
                                 <div className={styles.items}>
                                     <div className={styles.itemImg}>
                                         <span>Yêu Thích</span>

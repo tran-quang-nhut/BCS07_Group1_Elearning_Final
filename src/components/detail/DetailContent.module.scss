@@ -1,23 +1,110 @@
-@import '../../utils/variable.scss';
-@import '../../utils/mixin.scss';
+@import "../../utils/variable.scss";
+@import "../../utils/mixin.scss";
 
-.detailContent{
-    .CourseName{
-        text-transform: capitalize;
-        @include textBase($text-500,700, $cBlack);
+.detailContent {
+  .CourseName {
+    text-transform: capitalize;
+    @include textBase($text-500, 700, $cBlack);
+  }
+  .itemsTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  @media screen and (max-width: 1280px) {
+    .itemsTop {
+      p {
+        font-size: medium;
+      }
     }
-    .itemsTop{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 15px;
+  }
+  @media screen and (max-width: 1024px) {
+    .itemsTop {
+      flex-direction: column;
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      p {
+        font-size: large;
+      }
     }
-    @media screen and (max-width: 414.98px){
-        padding: 0 20px;
-        .itemsTop{
-            flex-direction: column;
-            align-items: flex-start;
-            
+    .itemsTopInfor {
+      display: flex;
+      gap: 30px;
+      margin-top: 20px;
+      height: 100%;
+      .teacher {
+        margin-top: 18px;
+      }
+      span {
+        padding-top: 9px;
+      }
+    }
+    .itemContent {
+      position: absolute;
+      left: 293px;
+    }
+  }
+
+  @media screen and (max-width: 991.98px) {
+    .itemsTop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+      p {
+        font-size: 15px;
+        margin-left: 16px;
+      }
+    }
+    .itemsTopInfor {
+      display: flex;
+
+      gap: 0px;
+    }
+    .itemContent {
+      position: unset;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .itemsTop {
+      flex-direction: column;
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      p {
+        font-size: large;
+      }
+      .itemsTopInfor {
+        margin-top: 0;
+        .itemContent {
+          position: absolute;
+          left: 209px;
         }
+      }
     }
+  }
+  @media screen and (max-width: 414.98px) {
+    .itemsTopInfor {
+      margin-top: 0;
+      .itemContent {
+        position: absolute;
+        left: 209px;
+      }
+      
+    }
+    #rate {
+        svg {
+          font-size: 12px;
+        }
+      }
+  }
+}
+@media screen and (max-width: 320.98px) {
+        .itemContent {
+          position: absolute ;
+          left: 148px !important;
+        }
 }

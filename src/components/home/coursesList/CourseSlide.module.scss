@@ -111,7 +111,7 @@
     }
     
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
         
     // .contentItem{
     //     display: flex;
@@ -127,7 +127,7 @@
     .info{
         display: flex;
         justify-content: space-evenly;
-        gap: 14px;
+        gap: 26px;
     }
     .infoItem{
         display: flex;
@@ -141,6 +141,18 @@
             }
     }
 }
+@media screen and (max-width: 1280px) {
+        .info{
+            span{
+                font-size: 11px;
+            }
+        }
+        .footerItem{
+            h3, p{
+                font-size: 14px;
+            }
+        }
+}
 @media screen and (max-width: 320px) {
     .info{
         
@@ -148,7 +160,7 @@
                 font-size: 32px;
             }
             span{
-                font-size: 10px;
+                font-size: 14px;
             }
     }
 }
