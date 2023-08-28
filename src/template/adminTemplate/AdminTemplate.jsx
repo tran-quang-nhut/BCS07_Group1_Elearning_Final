@@ -99,7 +99,7 @@ const Dashboard = (props) => {
             }}
           >
             <h1 className="text-orange-600 font-semibold text-1xl mr-3 capitalize">{user?.hoTen}</h1>
-            <img className="w-10 h-10 object-cover rounded-full" alt="User avatar" src='https://picsum.photos/150/150' />
+            <img className="w-10 h-10 object-cover rounded-full" alt="User avatar" src={require("../../assets/avatar/avtUser.jpg")} />
             <NavLink to={'/'}
               onClick={handleLogOut}
               className='adminLink text-black ml-5 hover:text-orange-400 transition-all flex items-center'><ExportOutlined style={{ fontSize: '1.5rem', marginRight: '5px' }} /> Đăng Xuất</NavLink>
@@ -136,7 +136,7 @@ const Dashboard = (props) => {
               padding: '10px 50px',
             }}
           >
-            <p className='font-bold'>Copyright © 2022. All rights reserved by Quang Nhựt && Tiến Đạt && Minh Quí.</p>
+            <p className='font-bold'>Copyright © 2023. All rights reserved by Quang Nhựt && Tiến Đạt && Minh Quí.</p>
           </Footer>
         </Layout>
       </Layout>

@@ -14,41 +14,41 @@
         @apply container mx-auto;
         padding: 150px 0;
         text-align: center;
-        h3{
-            font-size: $text-500;
+        // h3{
+            font-size: $text-800;
             font-weight: 600;
             color: $cYellow-600;
-            padding: 5px 10px;
-            background-color: $cWhite;
-            display: inline-block;
-            position: relative;
-            &::before, &::after{
-                content: "";
-                position: absolute;
-                top: 5px;
-                bottom: 5px;
-                left: 0;
-                right: 0;
-            }
-            &::before{
-                background: white;
-                animation: writeText 7s steps(21) 1s forwards infinite;
-            }
-            &::after{
-                top: 5px;
-                width: 1px;
-                background-color: rgb(6, 6, 6);
-                animation:blinkMouse 900ms steps(21) infinite,
-                        writeText 7s steps(21) 1s forwards infinite;
-            }
-        }
+        //     padding: 5px 10px;
+        //     background-color: $cWhite;
+        //     display: inline-block;
+        //     position: relative;
+        //     &::before, &::after{
+        //         content: "";
+        //         position: absolute;
+        //         top: 5px;
+        //         bottom: 5px;
+        //         left: 0;
+        //         right: 0;
+        //     }
+        //     &::before{
+        //         background: white;
+        //         animation: writeText 7s steps(21) 1s forwards infinite;
+        //     }
+        //     &::after{
+        //         top: 5px;
+        //         width: 1px;
+        //         background-color: rgb(6, 6, 6);
+        //         animation:blinkMouse 900ms steps(21) infinite,
+        //                 writeText 7s steps(21) 1s forwards infinite;
+        //     }
+        // }
         h1{
             font-size: $text-700;
             font-weight: 600;
             @include textGradient($c5GradientLeft);
         }
         p{
-            font-size: $text-400;
+            font-size: $text-600;
             font-weight: 600;
             color: $cWhite;
         }

@@ -196,7 +196,7 @@ const Profile = () => {
             <Row>
                 <Col className='text-center' xs={24} md={6}>
                     <div className='inline-block'>
-                        <img className='block rounded-full' src="https://picsum.photos/150/150" alt="..." />
+                        <img className='block rounded-full' src={require('../../../assets/avatar/avtUser.jpg')} alt="..." />
                     </div>
                     <h1 className='mt-5 font-bold text-2xl uppercase'>{profile?.hoTen}</h1>
                     <p className='font-medium text-gray-500 text-[16px]'>{profile?.maLoaiNguoiDung === 'GV' ? 'Giáo Vụ' : 'Học Viên'}</p>

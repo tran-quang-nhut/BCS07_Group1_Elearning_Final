@@ -123,7 +123,7 @@ const Header = () => {
 
             {profile && <div className={styles.profile}>
               <div className={styles.account}>
-                <img src="https://picsum.photos/150/150" alt="avatar" />
+                <img src={require('../../assets/avatar/avtUser.jpg')} alt="avatar" />
               </div>
               <ul className={styles.adminBtn}>
                 <li>
