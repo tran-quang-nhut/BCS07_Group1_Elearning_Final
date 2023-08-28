@@ -8,7 +8,7 @@ import styles from './Profile.module.scss';
 import { FaBook, FaGraduationCap, FaLayerGroup, FaSignal, FaSwatchbook, FaUserClock } from "react-icons/fa";
 
 const ProfileSkills = () => {
-    const [value, setValue] = useState({ skill: 'HTML5', value: 60, color: 'red' });
+    const [value, setValue] = useState({ skill: 'HTML5', value: 80, color: 'red' });
     let skill = useRef(null)
 
     const handleClickToView = () => skill.current.scrollIntoView({ behavior: 'smooth' });
@@ -19,23 +19,23 @@ const ProfileSkills = () => {
 
                 <Row >
                     <Col className='px-2 flex flex-col justify-center items-center' xs={24} lg={6}>
-                        <div className='flex items-center justify-center text-white w-40  h-20 bg-green-600 rounded-lg my-3'>
+                        <div className='flex items-center justify-center text-white w-40  h-20 bg-pink-600 rounded-lg my-3'>
                             <FaUserClock className='text-3xl' />
                             <div className='ml-5'>
                                 <h3 className='text-lg font-semibold'>Giờ Học</h3>
-                                <p className='text-lg font-medium'>80</p>
+                                <p className='text-lg font-medium'>120</p>
                             </div>
                         </div>
 
-                        <div className='flex items-center justify-center text-white w-40  h-20 bg-green-600 rounded-lg my-3'>
+                        <div className='flex items-center justify-center text-white w-40  h-20 bg-yellow-600 rounded-lg my-3'>
                             <FaSwatchbook className='text-3xl' />
                             <div className='ml-5'>
                                 <h3 className='text-lg font-semibold'>Buổi Học</h3>
-                                <p className='text-lg font-medium'>40</p>
+                                <p className='text-lg font-medium'>45</p>
                             </div>
                         </div>
 
-                        <div className='flex items-center justify-center text-white w-40  h-20 bg-green-600 rounded-lg my-3'>
+                        <div className='flex items-center justify-center text-white w-40  h-20 bg-orange-600 rounded-lg my-3'>
                             <FaGraduationCap className='text-3xl' />
                             <div className='ml-5'>
                                 <h3 className='text-lg font-semibold'>Học Lực</h3>
@@ -57,14 +57,14 @@ const ProfileSkills = () => {
                             </div>
                             <h1 className=' mt-3 font-medium text-xl'>{value.skill}</h1>
                         </div>
-                        <p className='mt-3 px-2'>Học tập thật nhiều để hoàn thiện kỹ năng lập trình của bạn !!!</p>
+                        
                     </Col>
                     <Col className='px-2 flex flex-col justify-center items-center' xs={24} lg={6}>
-                        <div className='flex items-center justify-center text-white w-40  h-20 bg-green-600 rounded-lg my-3'>
+                        <div className='flex items-center justify-center text-white w-40  h-20 bg-indigo-600 rounded-lg my-3'>
                             <FaLayerGroup className='text-3xl' />
                             <div className='ml-5'>
                                 <h3 className='text-lg font-semibold'>Điểm Tổng</h3>
-                                <p className='text-lg font-medium'>80 điểm</p>
+                                <p className='text-lg font-medium'>95 điểm</p>
                             </div>
                         </div>
 
@@ -72,15 +72,15 @@ const ProfileSkills = () => {
                             <FaSignal className='text-3xl' />
                             <div className='ml-5'>
                                 <h3 className='text-lg font-semibold'>Cấp Độ</h3>
-                                <p className='text-lg font-medium'>Trung Cấp</p>
+                                <p className='text-lg font-medium'>Junior</p>
                             </div>
                         </div>
 
-                        <div className='flex items-center justify-center text-white w-40  h-20 bg-green-600 rounded-lg my-3'>
+                        <div className='flex items-center justify-center text-white w-40  h-20 bg-rose-600 rounded-lg my-3'>
                             <FaBook className='text-3xl' />
                             <div className='ml-5'>
                                 <h3 className='text-lg font-semibold'>Bài Tập</h3>
-                                <p className='text-lg font-medium'>100</p>
+                                <p className='text-lg font-medium'>100%</p>
                             </div>
                         </div>
                     </Col>
@@ -89,7 +89,7 @@ const ProfileSkills = () => {
                     <Col xs={12} md={8} lg={5} className='py-3 lg:py-0 lg:text-center'>
                         <button
                             onClick={() => {
-                                setValue({ ...value, skill: 'HTML5', value: 60, color: 'red' });
+                                setValue({ ...value, skill: 'HTML5', value: 80, color: 'red' });
                                 handleClickToView();
                             }}
                             className={clsx(styles.btnEditProfile, 'mx-2')}>HTML5</button>
@@ -126,7 +126,7 @@ const ProfileSkills = () => {
                         <button
                             onClick={() => {
                                 handleClickToView();
-                                setValue({ ...value, skill: 'JAVA', value: 50, color: 'purple' });
+                                setValue({ ...value, skill: 'JAVA', value: 70, color: 'purple' });
                             }}
                             className={clsx(styles.btnEditProfile, 'mx-2')}>JAVA</button>
                     </Col>

@@ -162,12 +162,12 @@ export const Information = (props) => {
 const items = [
     {
         key: '1',
-        label: <h1>Thông Tin Tài Khoản</h1>,
+        label: <h1 className='border border-solid border-pink-500 font-bold bg-pink-500 rounded-md text-white w-full text-lg'>Thông Tin Tài Khoản</h1>,
         children: <Information />,
     },
     {
         key: '2',
-        label: <h1>Khóa Học Đã Đăng Ký</h1>,
+        label: <h1 className='border border-solid border-blue-500 font-bold bg-blue-500 rounded-md text-white w-full text-lg'>Khóa Học Đã Đăng Ký</h1>,
         children: <RegisteredCourses />,
     },
 ];
