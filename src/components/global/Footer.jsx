@@ -43,7 +43,7 @@ const Footer = () => {
               <h3>E-Learning</h3>
             </div>
 
-            <div className={styles.iconSocial}><a href="tel:1800-123-4567"><i><FaPhoneAlt className='inline-block' /> </i><span>1800-123-4567</span></a></div>
+            <div className={styles.iconSocial}><a href="tel:0907-064-396"><i><FaPhoneAlt className='inline-block' /> </i><span>0907-064-396</span></a></div>
             <div className={styles.iconSocial}><a href="mailto:ntran64634@gmail.com"> <i><FaEnvelope className='inline-block' /></i> <span>ntran64634@gmail.com</span></a></div>
             <div className={styles.iconSocial}><i><FaMapMarkerAlt className='inline-block' /></i> <span>TP. Hồ Chí Minh</span></div>
           </Col>

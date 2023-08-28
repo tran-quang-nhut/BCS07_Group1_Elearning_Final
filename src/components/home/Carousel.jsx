@@ -1,41 +1,39 @@
-import React from 'react';
+import React from "react";
 import Slider from "react-slick";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import './CarouselSlickMode.scss';
-import { Col, Row } from 'antd';
-import styles from './Carousel.module.scss';
-
-
+import "./CarouselSlickMode.scss";
+import { Col, Row } from "antd";
+import styles from "./Carousel.module.scss";
 
 //component custom for next button slcik
 function NextArrow(props) {
   const { style, onClick } = props;
   return (
     <div
-      className='setNext'
-      style={{ ...style, display: "block", }}
+      className="setNext"
+      style={{ ...style, display: "block" }}
       onClick={onClick}
-    ><BsChevronCompactRight /></div>
+    >
+      <BsChevronCompactRight />
+    </div>
   );
-};
+}
 
 //component custom for next button slcik
 function PrevArrow(props) {
   const { style, onClick } = props;
   return (
     <div
-      className='setPrev'
+      className="setPrev"
       style={{ ...style, display: "block" }}
       onClick={onClick}
-    ><BsChevronCompactLeft /></div>
+    >
+      <BsChevronCompactLeft />
+    </div>
   );
-};
-
+}
 
 const Carousel = (props) => {
-
-
-
   // cau hinh cho slick carousel
   let settingsCarouser = {
     dots: true,
@@ -46,33 +44,36 @@ const Carousel = (props) => {
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    appendDots: dots => {
+    appendDots: (dots) => {
       return <ul style={{ bottom: 0 }}>{dots}</ul>;
     },
     customPaging: (pagi, i) => {
       const style = {
         width: 7,
         height: 7,
-        borderRadius: '100%',
-        display: 'inline-block',
-        background: 'rgb(13, 148, 136)',
+        borderRadius: "100%",
+        display: "inline-block",
+        background: "rgb(13, 148, 136)",
         opacity: 0.4,
         transition: "0.4s",
       };
-      return <span className='slickDots' style={style} />;
+      return <span className="slickDots" style={style} />;
     },
   };
 
   // scroll to view
-  const handleScrollToViewCourse = () => props.viewCourseRef.current.scrollIntoView({ behavior: 'smooth' });
+  const handleScrollToViewCourse = () =>
+    props.viewCourseRef.current.scrollIntoView({ behavior: "smooth" });
 
   return (
     <Slider className={styles.bannerSlide} {...settingsCarouser}>
-
       <div className={styles.banner1}>
         <Row>
           <Col className={styles.bannerLeft} xs={24} md={12} xl={12}>
-            <img src={require('../../assets/image/imgBanner/paper_plane.93dfdbf5.png')} alt="..." />
+            <img
+              src={require("../../assets/image/imgBanner/paper_plane.93dfdbf5.png")}
+              alt="..."
+            />
             <div className={styles.flyAngle}></div>
             <div className={styles.BgDot1}></div>
             <div className={styles.BgDot2}></div>
@@ -84,21 +85,42 @@ const Carousel = (props) => {
               </div>
               <button
                 onClick={handleScrollToViewCourse}
-                className='bg-blue-600 uppercase mt-5 py-2 px-5 text-lg text-white hover:scale-95 hover:rounded-md transition duration-500'>Bắt Đầu Nào</button>
+                className="bg-blue-600 uppercase mt-5 py-2 px-5 text-lg text-white hover:scale-95 hover:rounded-md transition duration-500"
+              >
+                Bắt Đầu Nào
+              </button>
             </div>
           </Col>
           <Col className={styles.bannerRight} xs={24} md={12} xl={12}>
-            <img src={require('../../assets/image/imgBanner/slider2.f170197b.png')} alt="..." />
-            <img className={styles.imgBanner2} src={require('../../assets/image/imgBanner/clouds.15eb556c.png')} alt="..." />
-            <img className={styles.imgBanner3} src={require('../../assets/image/imgBanner/clouds.15eb556c.png')} alt="..." />
-            <img className={styles.imgBanner4} src={require('../../assets/image/imgBanner/clouds.15eb556c.png')} alt="..." />
-            <img className={styles.imgBanner5} src={require('../../assets/image/imgBanner/message_slider.6835c478.png')} alt="..." />
+            <img
+              src={require("../../assets/image/imgBanner/slider2.f170197b.png")}
+              alt="..."
+            />
+            <img
+              className={styles.imgBanner2}
+              src={require("../../assets/image/imgBanner/clouds.15eb556c.png")}
+              alt="..."
+            />
+            <img
+              className={styles.imgBanner3}
+              src={require("../../assets/image/imgBanner/clouds.15eb556c.png")}
+              alt="..."
+            />
+            <img
+              className={styles.imgBanner4}
+              src={require("../../assets/image/imgBanner/clouds.15eb556c.png")}
+              alt="..."
+            />
+            <img
+              className={styles.imgBanner5}
+              src={require("../../assets/image/imgBanner/message_slider.6835c478.png")}
+              alt="..."
+            />
           </Col>
-
         </Row>
       </div>
 
-      <div className={styles.banner1}>
+      {/* <div className={styles.banner1}>
         <Row>
           <Col className={styles.bannerLeft} xs={24} md={12} xl={12}>
             <img style={{ width: '30%' }} src={require('../../assets/image/imgBanner/paper_plane.93dfdbf5.png')} alt="..." />
@@ -150,10 +172,9 @@ const Carousel = (props) => {
           </Col>
 
         </Row>
-      </div>
-
+      </div> */}
     </Slider>
-  )
-}
+  );
+};
 
-export default Carousel
+export default Carousel;
