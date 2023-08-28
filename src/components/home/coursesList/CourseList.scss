@@ -1,11 +1,11 @@
 @import '../../../utils/variable.scss';
 
 .ant-tabs-ink-bar {
-    border-bottom: 2px solid $cGreen-600;
+    border-bottom: 4px solid $cRed-400;
 }
 
 .ant-tabs-tab-active .ant-tabs-tab-btn{
-    color: $cGreen-600 !important;
+    color: $cRed-400 !important;
 }
 
 .customPrev, .customNext{

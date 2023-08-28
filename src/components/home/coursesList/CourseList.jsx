@@ -25,7 +25,7 @@ const CourseList = (props) => {
   const items = categoryList.map(ele => {
     return {
       key: ele.maDanhMuc,
-      label: <h1 className='lg:text-lg font-semibold hover:text-green-600 transition-all duration-300'>{ele.tenDanhMuc}</h1>,
+      label: <h1 className='lg:text-xl font-bold hover:text-purple-600 transition-all duration-300 bg-teal-200 rounded-3xl px-5 py-1'>{ele.tenDanhMuc}</h1>,
       children: <CoursesSlide item={coursesList} />,
     }
   });
