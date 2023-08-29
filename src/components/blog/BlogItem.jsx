@@ -25,7 +25,7 @@ const BlogItem = (props) => {
                         <span>2500</span>
                     </div>
                 </div>
-                <p>Đăng Bởi <span className='text-pink-500'>{props.dataBlog.tacGia}</span></p>
+                <p className='text-blue-600 font-bold'>Tác giả: <span className='text-pink-500'>{props.dataBlog.tacGia}</span></p>
             </div>
             <p className='text-[16px] font-medium text-gray-500 mt-5 mb-2 lg:h-20 md:h-24 h-24 overflow-hidden'>{props.dataBlog.noiDung}</p>
             <button className={styles.btnSeeMore}>XEM THÊM</button>

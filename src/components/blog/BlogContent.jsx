@@ -20,49 +20,49 @@ const BlogContent = (props) => {
             hinhAnh: hinh1Img,
             tieuDe: 'Thời gian và động lực',
             noiDung: 'Có lẽ cũng rất lâu rồi mà tôi chưa đụng đến thứ được gọi là "timetable". Hay dân dã hơn thì người ta hay gọi là "Lịch thường nhật",...',
-            tacGia: 'Johny Nguyễn'
+            tacGia: ' Elon musk'
         },
         {
             hinhAnh: tailwindImg,
             tieuDe: 'Tailwind css và cách cài đặt cơ bản',
             noiDung: 'Có lẽ cũng rất lâu rồi mà tôi chưa đụng đến thứ được gọi là "timetable". Hay dân dã hơn thì người ta hay gọi là "Lịch thường nhật",...',
-            tacGia: ' Nguyên Minh '
+            tacGia: ' Ronaldo'
         },
         {
             hinhAnh: htmlImg,
             tieuDe: 'Cấu trúc cơ bản trong HTML',
             noiDung: 'Custom theme Material UI với TypeScript đơn giản, hiệu quả...',
-            tacGia: 'Steven',
+            tacGia: ' Messi',
         },
         {
             hinhAnh: materialImg,
             tieuDe: 'Material UI custom theme với TypeScript',
             noiDung: 'Trắc hẳn ai cũng biết một trang web thì không thể nào thiếu đi HTML và HTML làm nên cấu trúc của một trang web...',
-            tacGia: 'Johny Nguyễn'
+            tacGia: ' Neymar'
         },
         {
             hinhAnh: componentCreateImg,
             tieuDe: 'Cách tạo một component nhanh chóng chỉ bằng 3 ký tự',
             noiDung: 'Tạo một component nhiều lúc cũng khá mất nhiều thời gian nên mình xin giới thiệu extention này cho mọi người nhé...',
-            tacGia: 'Johny Nguyễn'
+            tacGia: ' Haaland'
         },
         {
             hinhAnh: asyncImg,
             tieuDe: 'Xử lý bất đồng bộ trong Javascript (phần 2)',
             noiDung: 'Async/await là cơ chế giúp bạn thực thi các thao tác bất đồng bộ một cách tuần tự hơn , giúp đoạn code nhìn qua tưởng như đồng...',
-            tacGia: 'Nguyên Văn'
+            tacGia: ' Mbbape'
         },
         {
             hinhAnh: typeScriptImg,
             tieuDe: 'TyperScrip là gì, Vì sao nên dùng TyperScript',
             noiDung: 'Link khóa học cho anh em nào tò mò ( Đừng lo vì tất cả đều miễn......',
-            tacGia: ' Nguyên Minh'
+            tacGia: ' Mane'
         },
         {
             hinhAnh: typeScriptImg,
             tieuDe: 'TyperScrip là gì, Vì sao nên dùng TyperScript',
             noiDung: 'Link khóa học cho anh em nào tò mò ( Đừng lo vì tất cả đều miễn......',
-            tacGia: ' Nguyên Minh'
+            tacGia: ' De Gea'
         },
     ]
 
