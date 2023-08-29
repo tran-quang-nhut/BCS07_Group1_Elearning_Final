@@ -66,7 +66,7 @@ const Header = () => {
           </NavLink>
 
           <nav id='openNav' className={clsx(styles.navMenu, 'md:translate-x-0',
-            styleCSS ? 'translate-x-0' : 'translate-x-72',
+            styleCSS ? 'translate-x-0' : 'translate-x-96',
           )}>
             <div className="w-full md:w-40 xl:w-80 mr-3 py-3 px-1 md:p-0">
               <form

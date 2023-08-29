@@ -55,14 +55,14 @@ const CoursesSlide = (props) => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 2,
           infinite: true,
           dots: false,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -126,26 +126,28 @@ const CoursesSlide = (props) => {
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-around py-3 border-t border-solid border-gray-300 mt-6">
-                    <div className="flex items-center ">
-                      <div className={styles.avatarTeacher}>
-                        <img
-                          src={require("../../../assets/avatar/avatar2.bb9626e2.png")}
-                          alt="..."
-                        />
+                  <div className={styles.footerItem}>
+                    <div className="flex items-center justify-around py-3 border-t border-solid border-gray-300 mt-6">
+                      <div className="flex items-center ">
+                        <div className={styles.avatarTeacher}>
+                          <img
+                            src={require("../../../assets/avatar/avatar2.bb9626e2.png")}
+                            alt="..."
+                          />
+                        </div>
+                        <h3 className="text-lg text-gray-500 ml-2 font-medium">
+                          Ronaldo
+                        </h3>
                       </div>
-                      <h3 className="text-lg text-gray-500 ml-2 font-medium">
-                        Ronaldo
-                      </h3>
-                    </div>
-                    <div>
-                      <p className="decoration-slice line-through text-gray-500">
-                        900.000 <sup>đ</sup>
-                      </p>
-                      <p className="text-teal-600 text-lg font-medium">
-                        600.000 <sup>đ</sup>{" "}
-                        <FaTag className="text-red-500 inline-block" />
-                      </p>
+                      <div>
+                        <p className="decoration-slice line-through text-gray-500">
+                          900.000 <sup>đ</sup>
+                        </p>
+                        <p className="text-teal-600 text-lg font-medium">
+                          600.000 <sup>đ</sup>{" "}
+                          <FaTag className="text-red-500 inline-block" />
+                        </p>
+                      </div>
                     </div>
                   </div>
 
@@ -167,25 +169,25 @@ const CoursesSlide = (props) => {
                       {truncateText(ele.moTa, 120)}
                     </p>
                     <div className="flex justify-around text-lg font-medium text-gray-500 mt-3">
-                        <div className={styles.info}>
-                      <div className="flex items-center">
-                        <div className={styles.infoItem}>
-                        <FieldTimeOutlined className="mr-1 text-green-600" />
-                        <span>8 Giờ</span>
-                      </div>
-                      </div>
-                      <div className="flex items-center">
-                      <div className={styles.infoItem}>
-                        <CalendarOutlined className="mr-1 text-red-600" />
-                        <span>8 Tuần</span>
+                      <div className={styles.info}>
+                        <div className="flex items-center">
+                          <div className={styles.infoItem}>
+                            <FieldTimeOutlined className="mr-1 text-green-600" />
+                            <span>8 Giờ</span>
+                          </div>
                         </div>
-                      </div>
-                      <div className="flex items-center">
-                      <div className={styles.infoItem}>
-                        <FaSignal className="mr-1 text-teal-600" />
-                        <span>Tất Cả</span>
+                        <div className="flex items-center">
+                          <div className={styles.infoItem}>
+                            <CalendarOutlined className="mr-1 text-red-600" />
+                            <span>8 Tuần</span>
+                          </div>
                         </div>
-                      </div>
+                        <div className="flex items-center">
+                          <div className={styles.infoItem}>
+                            <FaSignal className="mr-1 text-teal-600" />
+                            <span>Tất Cả</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <button
