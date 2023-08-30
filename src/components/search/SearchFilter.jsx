@@ -16,7 +16,7 @@ const SearchFilter = () => {
       </h1>
       <div className={styles.filter}>
         <div className="border-b border-solid border-gray-400">
-          <p className="py-2">Khóa Học</p>
+          <p className="py-2 font-bold text-xl">Khóa Học</p>
           {categoryList.map((ele, index) => (
             <div key={index} className="py-1 sm:py-2">
               <Checkbox className="border-teal-500" onChange={onChange}>
@@ -26,7 +26,7 @@ const SearchFilter = () => {
           ))}
         </div>
         <div className="border-b border-solid border-gray-400">
-          <p className="py-2">Cấp Độ</p>
+          <p className="py-2 font-bold text-xl">Cấp Độ</p>
           <div className=" py-1 sm:py-2">
             <Checkbox>Tất Cả</Checkbox>
           </div>
@@ -41,7 +41,7 @@ const SearchFilter = () => {
           </div>
         </div>
         <div className={styles.rate}>
-          <p className="py-2">Cấp Độ</p>
+          <p className="py-2 font-bold text-xl">Cấp Độ</p>
           <div className="py-1 sm:py-2">
             <Checkbox>
               <Rate
