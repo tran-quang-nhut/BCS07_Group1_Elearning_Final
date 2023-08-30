@@ -27,7 +27,7 @@
     }
    }
     
-    @media screen and (max-width: 820.98px) {            
+    @media screen and (max-width: 1024px) {            
             img{
                 width: 40px;
             }
@@ -35,7 +35,7 @@
                 display: none;
             }
     }
-    @media screen and (max-width: 414.98px) {
+    @media screen and (max-width: 768px) {
         img{
             width: 40px;
         }
@@ -109,7 +109,7 @@
                 visibility: visible;
                 height: 198px;
             }
-            @media screen and (max-width: 414.98px){
+            @media screen and (max-width: 768px){
                 z-index: 100;
                 .portfolio{
                     width: 100%;
@@ -162,7 +162,7 @@
                 height: 74px; 
             }
 
-            @media screen and (max-width: 414.98px) {
+            @media screen and (max-width: 768px) {
                 .event{
                     top: 0;
                     left: -100%;
@@ -222,7 +222,7 @@
         width: 100%;
     }
 
-    @media screen and (max-width: 1024.98px) {
+    @media screen and (max-width: 1279.98px) {
         .navBar{
             li{
                 font-size: 10px;
@@ -236,7 +236,7 @@
             }
         }
     }
-    @media screen and (max-width: 414.98px) {
+    @media screen and (max-width: 768px) {
         background-color: $cWhite;
         display: block;
         transition: all .5s;
@@ -351,7 +351,7 @@
 
 .buttonNavBar{
     display: none;
-    @media screen and (max-width: 414.98px) {
+    @media screen and (max-width: 768px) {
         display: block;
         margin-right: 10px;
     }
