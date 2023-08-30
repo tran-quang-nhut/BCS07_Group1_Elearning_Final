@@ -9,7 +9,7 @@ const BoxNumber = () => {
     const props = useSpring((number) => ({ val: number, from: { val: 0 } }));
 
   return (
-    <div className='mt-10 bg-green-100 py-10'>
+    <div className='mt-10 bg-purple-200 py-10'>
         <Row className={styles.boxContent}>
             <Col xs={12} md={6} lg={6} className={styles.boxItem}>
                 <img src={require('../../assets/image/boxNumber/003-students.e1a7c67b.png')} alt="..." />

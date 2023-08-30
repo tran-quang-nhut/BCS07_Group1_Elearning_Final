@@ -97,13 +97,13 @@ const Footer = () => {
           </Col>
         </Row>
 
-        <div className='border-t border-solid border-gray-300 mt-3'>
+        <div className='border-t border-solid border-blue-300 mt-3'>
           <div className='md:w-3/4 mx-auto md:flex md:justify-between pt-3 w-full text-center md:text-left'>
             <p>Copyright © 2023. All rights reserved by Nhóm 1: <span className='font-bold'> Quang Nhựt | Tiến Đạt | Minh Quí.</span></p>
             <div className={clsx(styles.iconsBottom, 'mt-5 md:mt-0')}>
-              <i><FaInstagram className='inline-block' /></i>
-              <i><FaFacebookF className='inline-block' /></i>
-              <i><FaTwitter className='inline-block' /></i>
+              <i><FaInstagram className='inline-block bg-orange-500 rounded-md' /></i>
+              <i><FaFacebookF className='inline-block bg-blue-500 rounded-xl px-1' /></i>
+              <i><FaTwitter className='inline-block bg-blue-500 rounded-md' /></i>
             </div>
           </div>
         </div>

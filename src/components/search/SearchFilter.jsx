@@ -45,7 +45,7 @@ const SearchFilter = () => {
           <div className="py-1 sm:py-2">
             <Checkbox>
               <Rate
-                className="font-lg text-teal-500"
+                className="font-lg text-yellow-500"
                 disabled
                 defaultValue={1}
               />
@@ -54,7 +54,7 @@ const SearchFilter = () => {
           <div className="py-1 sm:py-2">
             <Checkbox>
               <Rate
-                className="font-lg text-teal-500"
+                className="font-lg text-yellow-500"
                 disabled
                 defaultValue={2}
               />
@@ -63,7 +63,7 @@ const SearchFilter = () => {
           <div className="py-1 sm:py-2">
             <Checkbox>
               <Rate
-                className="font-lg text-teal-500"
+                className="font-lg text-yellow-500"
                 disabled
                 defaultValue={3}
               />
@@ -72,7 +72,7 @@ const SearchFilter = () => {
           <div className="py-1 sm:py-2">
             <Checkbox>
               <Rate
-                className="font-lg text-teal-500"
+                className="font-lg text-yellow-500"
                 disabled
                 defaultValue={4}
               />
@@ -81,7 +81,7 @@ const SearchFilter = () => {
           <div className="py-1 sm:py-2">
             <Checkbox>
               <Rate
-                className="font-lg text-teal-500"
+                className="font-lg text-yellow-500"
                 disabled
                 defaultValue={5}
               />

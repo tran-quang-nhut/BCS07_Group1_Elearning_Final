@@ -13,8 +13,8 @@ const ProfileSkills = () => {
 
     const handleClickToView = () => skill.current.scrollIntoView({ behavior: 'smooth' });
     return (
-        <div className='border border-solid border-teal-500 mt-10'>
-            <h1 ref={skill} className='py-3 text-center mb-5 text-lg lg:text-2xl font-bold bg-teal-500 text-white w-full'>Kỹ Năng Của Tôi</h1>
+        <div className='border border-solid border-blue-500 mt-10'>
+            <h1 ref={skill} className='py-3 text-center mb-5 text-lg lg:text-2xl font-bold bg-blue-500 text-white w-full'>Kỹ Năng Của Tôi</h1>
             <div  className='px-5 mt-10'>
 
                 <Row >
