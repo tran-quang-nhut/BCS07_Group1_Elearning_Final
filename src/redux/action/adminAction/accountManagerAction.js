@@ -18,7 +18,7 @@ export const fetchApiAccountAction = (page, tuKhoa) => {
             dispatch(createAction(adminType.GET_ACCOUNT_LIST, res.data));
 
         } catch (err) {
-            console.log(err);
+            // console.log(err);
         } finally {
             dispatch(isLoadingAction(false));
         };
@@ -31,7 +31,7 @@ export const fetApiProfileAction = (taiKhoan) => async (dispatch) => {
         const res = await adminService.getAccountProfile(taiKhoan);
         dispatch(createAction(adminType.GET_PROFILE, res.data));
     } catch (err) {
-        console.log(err);
+        // console.log(err);
     }
 }
 
@@ -40,10 +40,10 @@ export const fetchApiCreateAccountAction = (taiKhoan) => {
     return async (dispatch) => {
         try {
             const res = await adminService.getApiCreateAccount(taiKhoan);
-            console.log(res.data);
+            // console.log(res.data);
             dispatch(createAction(adminType.CREATE_ACCOUNT, res.data));
         } catch (err) {
-            console.log(err);
+            // console.log(err);
         }
     };
 };
@@ -58,7 +58,7 @@ export const fetchApiAccountProfile = async (taiKhoan) => {
             const res = await adminService.fetchApiAccountProfile(taiKhoan);
             dispatch(createAction(adminType.EDIT_ACCOUNT, res.data));
         } catch (err) {
-            console.log(err);
+            // console.log(err);
         }
     }
 }

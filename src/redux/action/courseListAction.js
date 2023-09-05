@@ -14,7 +14,7 @@ export const fetchApiCategoryListAction = async (dispatch) => {
         const res = await coursesService.fetchApiCategory();
         dispatch(createAction(courseType.CATEGORY_LIST, res.data));
     } catch (err) {
-        console.log(err);
+        // console.log(err);
     } finally {
         dispatch(isLoadingAction(false));
     }
@@ -32,7 +32,7 @@ export const fetchApiCoursesWithCategoryAction = (category) => async (dispatch) 
 
         dispatch(createAction(courseType.GET_COURSES_CATEGORY, res.data));
     } catch (err) {
-        console.log(err);
+        // console.log(err);
     } finally {
         dispatch(createAction(courseType.COURSE_LOADING, false))
     }
@@ -49,7 +49,7 @@ export const fetchApiPopularCoursesAction = (page) => async (dispatch) => {
         dispatch(createAction(courseType.GET_POPULAR_COURSE, res.data));
         
     } catch (err) {
-        console.log(err);
+        // console.log(err);
     } finally {
         dispatch(createAction(courseType.POPULAR_COURSE_LOADING, false));
     }
@@ -65,7 +65,7 @@ export const fetchApiDetailCourseAction = (maKH) => async (dispatch) => {
         dispatch(createAction(courseType.GET_DETAIL_COURSE, res.data));
 
     } catch (err) {
-        console.log(err);
+        // console.log(err);
     } finally {
         dispatch(isLoadingAction(false));
     };
@@ -79,7 +79,7 @@ export const fetchApiCategoryCoursesAction = (maDM) => async (dispatch) => {
         const res = await coursesService.fetchApiCoursesCategory(maDM);
         dispatch(createAction(courseType.GET_COURSES_CATEGORY, res.data));
     } catch (err) {
-        console.log(err);
+        // console.log(err);
     } finally {
         dispatch(isLoadingAction(false));
     };
@@ -91,9 +91,9 @@ export const editCourseApi = (formData) => async (dispatch) => {
         dispatch(isLoadingAction(true));
         const res = await coursesService.fetchApiEditCourse(formData);
 
-        console.log(res)
+        // console.log(res)
     } catch (err) {
-        console.log(err.response);
+        // console.log(err.response);
     } finally {
         dispatch(isLoadingAction(false));
     }

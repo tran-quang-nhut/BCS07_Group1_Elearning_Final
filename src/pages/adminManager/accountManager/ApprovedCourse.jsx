@@ -28,7 +28,7 @@ const ApprovedCourse = (props) => {
                 setApprovedCourse(res.data);
             }
         } catch (err) {
-            console.log(err)
+            // console.log(err)
         } finally {
             dispatch(isLoadingAction(false));
         };

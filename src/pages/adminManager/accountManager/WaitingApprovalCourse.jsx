@@ -30,7 +30,7 @@ const WaitingApprovalCourse = (props) => {
                 SetWaitingApprovalCourse(res.data);
             }
         } catch (err) {
-            console.log(err)
+            // console.log(err)
         } finally {
             dispatch(isLoadingAction(false));
         };

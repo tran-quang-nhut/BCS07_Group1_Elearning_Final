@@ -62,7 +62,7 @@ const CreateCourse = (props) => {
             try {
 
                 const res = await coursesService.fetApiCreateCourse(formData);
-                console.log(res)
+                // console.log(res)
                 await Swal.fire({
                     position: 'center',
                     icon: 'success',

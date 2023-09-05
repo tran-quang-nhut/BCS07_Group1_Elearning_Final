@@ -29,7 +29,7 @@ export const fetApiProfileAction = async (dispatch) => {
         await dispatch(createAction(userType.GET_PROFILE, res.data));
 
     } catch (err) {
-        console.log(err);
+        // console.log(err);
     };
 }
 

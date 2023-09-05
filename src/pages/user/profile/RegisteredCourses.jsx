@@ -51,7 +51,7 @@ const RegisteredCourses = () => {
             });
             dispatch(fetApiProfileAction);
         } catch (err) {
-            console.log(err)
+            // console.log(err)
         }
     }
 

@@ -51,7 +51,7 @@ const Register = () => {
           showConfirmButton: false,
           timer: 1000
         })
-        console.log(err)
+        // console.log(err)
       }
     },
 

@@ -31,7 +31,7 @@ const WaitingApprovalStudent = (props) => {
             setApprovalStudentList(res.data);
 
         } catch (err) {
-            console.log(err);
+            // console.log(err);
         } finally {
             dispatch(isLoadingAction(false));
         }

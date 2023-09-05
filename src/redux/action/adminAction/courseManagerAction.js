@@ -53,7 +53,7 @@ export const fetchApiEditDetailCourseAction = (maKH) => async (dispatch) => {
         const res = await adminService.fetchApiEditDetailCourse(maKH);
         dispatch(createAction(adminType.GET_DETAIL_COURSE_EDIT, res.data));
     } catch (err) {
-        console.log(err);
+        // console.log(err);
     } finally {
         dispatch(isLoadingAction(false));
     }
@@ -71,7 +71,7 @@ export const fetchApiCourseStudentAction = (maKH) => async(dispatch) => {
         dispatch(createAction(adminType.GET_COURSE_STUDENT, res.data));
 
     } catch (err) {
-        console.log(err.response)
+        // console.log(err.response)
     } finally {
         dispatch(isLoadingAction(false));
     }
